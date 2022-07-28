@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
 import styles2 from '../styles/Button.module.css';
-export default function(){
+export default function tut_css(){
     return(
         <>
         <Head>

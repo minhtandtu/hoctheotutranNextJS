@@ -2,7 +2,7 @@ import React from "react";
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
-export default function(){
+export default function myHead(){
     return(
         <>
         <Head>
@@ -15,8 +15,8 @@ export default function(){
             <h1> Thiết lập title, meta, link </h1>
             <p>Để thao tác bên trong thẻ head bằng các thẻ như title, meta, link, 
                 chúng ta ko thể code trong thẻ head như trong html mà chúng ta phải sử dụng
-                1 thành phần được NextJS cung cấp là {`<Head> title, meta, link </Head>`}với chữ H viết hoa. 
-                Chúng ta cũng phải import Head từ 'next/head' để có thể dùng được thẻ Head này.
+                Head với chữ H viết hoa
+                Chúng ta cũng phải import Head từ next/head để có thể dùng được thẻ Head này.
             </p>
         </div>
         <div className ={styles.linkbutton}>

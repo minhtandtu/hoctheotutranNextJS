@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
-export default function (){
+export default function tut_layout(){
     return(
         <>
         <div className={styles.componentCenter}>

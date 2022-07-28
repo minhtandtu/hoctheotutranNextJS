@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-export default function (){
+export default function tut_navi_footer(){
     return(
         <>
         <div className={styles.componentCenter}>

@@ -29,7 +29,7 @@ export default function AllCoder({coder}){
         <>
         <div className ={styles.componentCenter}>
            
-            <h1>This is {coder.name} 's Info</h1>
+            <h1>This is {coder.name} s Info</h1>
             <div className={styles.coderInfo}>
             <p>Company name: {coder.company.name} </p>  
             <p>Email: {coder.email} </p> 
