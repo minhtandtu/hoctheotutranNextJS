@@ -2,12 +2,12 @@ import React from "react";
 import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
 
-export const getStaticPaths = async () =>{
-    const res = await fetch("https://jsonplaceholder.typicode.com/users");
+export const getStaticPaths = async() =>{
+    const res = await fetch ("https://jsonplaceholder.typicode.com/users");
     const data = await res.json();
-    const paths = data.map((coder)=>{
+    const paths = data.map((coder) =>{
         return {
-            params:{id:coder.id.toString()}
+            params:{id: coder.id.toString()}
         }
     })
     return {
@@ -15,13 +15,14 @@ export const getStaticPaths = async () =>{
         fallback:false,
     }
 }
-export const getStaticProps = async (context)=>{
+
+export const getStaticProps = async (context) =>{
     const id = context.params.id;
-    const res = await fetch("https://jsonplaceholder.typicode.com/users/"+id);
+    const res = await fetch ("https://jsonplaceholder.typicode.com/users/"+id);
     const data = await res.json();
-    
+
     return {
-        props:{coder: data}
+        props:{coder:data}
     }
 }
 export default function AllCoder({coder}){

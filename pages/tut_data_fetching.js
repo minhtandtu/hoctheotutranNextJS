@@ -29,7 +29,7 @@ export default function CoderData({coders}){
             <div className={styles.coderDataDiv} >
                 {coders.map((coder) => 
                 <Link href = {"../coders/" + coder.id} key={coder.id}>
-                <a className={styles.coderData}>{coder.name}</a>
+                    <a className={styles.coderData}>{coder.name}</a>
                 </Link>
                 )}
             </div>
